@@ -1,0 +1,19 @@
+{
+  "name": "bitcoin-2-of-3-multisig",
+  "version": "0.0.1",
+  "description": "A bitcoin private key generator.",
+  "main": "private-key-generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitcoin",
+    "private",
+    "key"
+  ],
+  "author": "Anders Brownworth",
+  "license": "MIT",
+  "dependencies": {
+    "bignum": "^0.9.0"
+  }
+}
