@@ -23,14 +23,12 @@ int main(int argc, char *argv[]) {
   BN_hex2bn(&res,prv_hex);
 
   /*
-  // anders
   BIO *out=NULL;
   out=BIO_new(BIO_s_file());
   if (out == NULL) exit(1);
   BIO_set_fp(out,stdout,BIO_NOCLOSE);
   BN_print(out,res);
   printf("\n");
-  // anders
   */
 
   eckey = EC_KEY_new_by_curve_name(NID_secp256k1);
