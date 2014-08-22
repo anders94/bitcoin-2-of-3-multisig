@@ -100,9 +100,8 @@ bitcoind sendtoaddress 38aNB81yPqNp6X2T3rXYZN8Z3C4pSbqEvs 0.001
 
 The resulting transaction (transaction number 
 7e69687c94c57a878cf711a39870383c6fe93b420f26184a21d020d8ace2df83) is a spend to our new address. 
-Looking that that transaction will show some coin going in and other coin being returned as 
-change. We will need the vout and the scriptPubKey of the output that we can now spend. Let's 
-take a look:
+That transaction will show some coin going in and other coin being returned as change. We will 
+need the vout and the scriptPubKey of the output that we can now spend. Let's take a look:
 
 ```sh
 bitcoind getrawtransaction 7e69687c94c57a878cf711a39870383c6fe93b420f26184a21d020d8ace2df83 1
