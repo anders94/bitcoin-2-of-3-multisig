@@ -142,6 +142,11 @@ through untrusted mediums such as unencrypted email.
 Let's go sign it with one of the private keys. In this case we will use the private key in 
 Wallet Import Format. (WIF)
 
+Note: when doing this using the bitcoin-abc Bitcoin Cash (BCC) version of `bitcoin-cli` you
+will need to also add an `amount` property to each input specifying the amount of each input.
+(the original input value without subtracting miner's fees) The JSON will look something like
+`..."vout":1,amount:0.001"scriptPubKey"...`.
+
 ```sh
 bitcoin-cli signrawtransaction '010000000183dfe2acd820d0214a18260f423be96f3c387098a311f78c877ac5947c68697e0100000000ffffffff01905f0100000000001976a9145fa5be58f939d6ae79636c2143fa9e7924102c1588ac00000000' '[{"txid":"7e69687c94c57a878cf711a39870383c6fe93b420f26184a21d020d8ace2df83","vout":1,"scriptPubKey":"a9144b86dfac7f503de1127366815d1d45241328246687","redeemScript":"524104a97b658c114d77dc5f71736ab78fbe408ce632ed1478d7eaa106eef67c55d58a91c6449de4858faf11721e85fe09ec850c6578432eb4be9a69c76232ac593c3b4104019ef04a316792f0ecbe5ab1718c833c3964dee3626cfabe19d97745dbcaa5198919081b456e8eeea5898afa0e36d5c17ab693a80d728721128ed8c5f38cdba04104a04f29f308160e6f945b33d943304b1b471ed8f9eaceeb5412c04e60a0fab0376871d9d1108948b67cafbc703e565a18f8351fb8558fd7c7482d7027eecd687c53ae"}]' '["5KffUB9YUsvoGjrcn76PjVnC61PcWLzws4QPfrT9RFNd85utCkZ"]'
 {
