@@ -142,8 +142,8 @@ through untrusted mediums such as unencrypted email.
 Let's go sign it with one of the private keys. In this case we will use the private key in 
 Wallet Import Format. (WIF)
 
-Note: when doing this using the bitcoin-abc Bitcoin Cash (BCC) version of `bitcoin-cli` you
-will need to also add an `amount` property to each input specifying the amount of each input.
+Note: When doing this using the `bitcoin-abc` Bitcoin Cash (BCH / BCC) or `bgold-cli` Bitcoin Gold (BTG)
+you will need to also add an `amount` property to each input specifying the amount of each input.
 (the original input value without subtracting miner's fees) The JSON will look something like
 `..."vout":1,amount:0.001,"scriptPubKey"...`.
 
